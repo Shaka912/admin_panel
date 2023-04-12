@@ -20,7 +20,7 @@ function Home() {
     }
   }, [user, navigate]);
   // useEffect(() => {
-  console.log(u.info.name);
+ 
 
   // }, [])
   useEffect(() => {
@@ -36,8 +36,6 @@ function Home() {
           let ab = res.data.users;
           let newdata = ab.slice(0, 3);
           setdata1(newdata);
-
-          console.log(newdata);
           setloading(false);
         })
         .catch((err) => {
