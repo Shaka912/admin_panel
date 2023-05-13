@@ -31,7 +31,7 @@ function Users() {
     };
     function getData() {
       axios
-        .get("http://3.238.22.34:80/api/admin/getusers", config)
+        .get("http://44.199.235.171:80/api/admin/getusers", config)
         .then((res) => {
           let ab = res.data.users;
           setdata1(ab);
@@ -106,7 +106,7 @@ function Users() {
     };
     setloading(true);
     axios
-      .delete(`http://3.238.22.34:80/api/admin/deleteuser/${id}`, config)
+      .delete(`http://44.199.235.171:80/api/admin/deleteuser/${id}`, config)
       .then((res) => {
         if (res.status === 200) {
           toast("User have been deleted Successfully", {
