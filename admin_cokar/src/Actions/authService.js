@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'http://3.238.22.34:80/api/admin/'
+const API_URL = 'http://44.199.235.171:80/api/admin/'
 
 //login user function
 
