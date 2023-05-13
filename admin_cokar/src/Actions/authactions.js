@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 const dispatch = useDispatch
 export const login = (userdata) => {
   axios
-    .post("http://3.238.22.34:80/api/admin/login", userdata)
+    .post("http://44.199.235.171:80/api/admin/login", userdata)
     .then((res) => {
       console.log(res)
       const { token } = res.data;
