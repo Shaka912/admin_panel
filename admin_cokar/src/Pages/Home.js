@@ -31,7 +31,7 @@ function Home() {
     };
     function getData() {
       axios
-        .get("http://3.238.22.34:80/api/admin/getusers", config)
+        .get("http://44.199.235.171:80/api/admin/getusers", config)
         .then((res) => {
           let ab = res.data.users;
           let newdata = ab.slice(0, 3);
