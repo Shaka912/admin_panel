@@ -19,17 +19,6 @@ export default function AddModal(props) {
   const u = JSON.parse(localStorage.getItem("user"));
   const [open, setOpen] = React.useState(false);
   const [loading, setloading] = React.useState(false);
-  // const [value, setvalue] = React.useState({
-  //   name: "",
-  //   email: "",
-  //   password: "",
-  //   bio: "",
-  //   dob: "",
-  //   gender: "",
-  //   longitude: "",
-  //   latitude: "",
-  //   image: "",
-  // });
   const [disable, setdisable] = React.useState(false);
   const [email, setemail] = React.useState("");
   const [name, setname] = React.useState("");
@@ -73,7 +62,7 @@ export default function AddModal(props) {
     let config1 = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://3.238.22.34:80/api/admin/user-add",
+      url: "http://44.199.235.171:80/api/admin/user-add",
       headers: {
         Authorization: token,
 
@@ -84,7 +73,7 @@ export default function AddModal(props) {
     };
     try {
       const response = await axios.post(
-        "http://3.238.22.34:80/api/admin/user-add",
+        "http://44.199.235.171:80/api/admin/user-add",
         formdata,
         {
           headers: {
